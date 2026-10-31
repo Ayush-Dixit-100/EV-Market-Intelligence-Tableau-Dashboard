@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global EV Market Intelligence Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div>
+            <h1>⚡ Global EV Market Intelligence Portal</h1>
+            <p>Executive Tableau Visualizations & Strategic Market Analytics</p>
+        </div>
+    </header>
+
+    <!-- Top KPI Bar -->
+    <div class="kpi-container">
+        <div class="kpi-card">
+            <h3>Total Analyzed Vehicles</h3>
+            <div class="value">200,000</div>
+        </div>
+        <div class="kpi-card">
+            <h3>Vehicle Categories</h3>
+            <div class="value">15 Segments</div>
+        </div>
+        <div class="kpi-card">
+            <h3>Battery Chemistries</h3>
+            <div class="value">5 Technologies</div>
+        </div>
+        <div class="kpi-card">
+            <h3>Global Manufacturers</h3>
+            <div class="value">200 Companies</div>
+        </div>
+    </div>
+
+    <!-- Scenario Navigation Tabs -->
+    <nav class="tab-nav">
+        <button class="tab-btn active" onclick="openScenario(event, 'scenario-1')">Scenario 1: Emily Johnson (Market Strategy)</button>
+        <button class="tab-btn" onclick="openScenario(event, 'scenario-2')">Scenario 2: David Chen (Business Intelligence)</button>
+        <button class="tab-btn" onclick="openScenario(event, 'scenario-3')">Scenario 3: Dr. Sarah Williams (Mobility Research)</button>
+    </nav>
+
+    <!-- Main Visualizations Container -->
+    <main>
+
+        <!-- SCENARIO 1 SECTION -->
+        <section id="scenario-1" class="scenario-section active">
+            <div class="scenario-header">
+                <h2>Scenario 1: Market Strategy & Portfolio Optimization</h2>
+                <p>Stakeholder: Emily Johnson (Market Strategy Director) — Evaluating sales contribution, top manufacturers, and category ranges.</p>
+            </div>
+            <div class="grid-3">
+                <div class="viz-card">
+                    <div class="viz-header">
+                        <h3>Visual 1: Sales Volume & Total Revenue by Category</h3>
+                        <span>Unit Sales & Dollar Volume Breakdown</span>
+                    </div>
+                    <div class="viz-body">
+                        <img src="Screenshots\Sales Volume & Total Revenue by Category.png" alt="Sales Volume & Revenue by Category Chart">
+                    </div>
+                    <div class="viz-footer">Identifies highest revenue segments (Sports Cars, Luxury SUVs) vs. unit volume leaders.</div>
+                </div>
+
+                <div class="viz-card">
+                    <div class="viz-header">
+                        <h3>Visual 2: Top 10 Manufacturers by Sales & Satisfaction</h3>
+                        <span>Ranked Sales with Customer Rating Overlay</span>
+                    </div>
+                    <div class="viz-body">
+                        <img src="Screenshots\Top 10 Manufacturers by Sales.png" alt="Top 10 Manufacturers Chart">
+                    </div>
+                    <div class="viz-footer">Ranks leading manufacturers while highlighting customer rating trends.</div>
+                </div>
+
+                <div class="viz-card">
+                    <div class="viz-header">
+                        <h3>Visual 3: Category Driving Range Distribution (km)</h3>
+                        <span>Box Plot Range Benchmark</span>
+                    </div>
+                    <div class="viz-body">
+                        <img src="Screenshots\Driving Range Distribution (km)  .png" alt="Driving Range Distribution Chart">
+                    </div>
+                    <div class="viz-footer">Compares driving range variability across commercial, SUV, and passenger segments.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCENARIO 2 SECTION -->
+        <section id="scenario-2" class="scenario-section">
+            <div class="scenario-header">
+                <h2>Scenario 2: Business Intelligence & Competitive Landscape</h2>
+                <p>Stakeholder: David Chen (BI Manager) — Analyzing market share, supply chains, and battery technology adoption.</p>
+            </div>
+            <div class="grid-3">
+                <div class="viz-card">
+                    <div class="viz-header">
+                        <h3>Visual 4: Regional Market Share</h3>
+                        <span>Geographic Penetration Treemap</span>
+                    </div>
+                    <div class="viz-body">
+                        <img src="Screenshots\Regional Market Share Share.png" alt="Regional Market Share Chart">
+                    </div>
+                    <div class="viz-footer">Displays market share split by geographic target regions.</div>
+                </div>
+
+                <div class="viz-card">
+                    <div class="viz-header">
+                        <h3>Visual 5: Production Origin vs. Destination Heatmap</h3>
+                        <span>Manufacturing Country Export Matrix</span>
+                    </div>
+                    <div class="viz-body">
+                        <img src="Screenshots\Production Origin vs. Destination Region.png" alt="Manufacturing Heatmap Chart">
+                    </div>
+                    <div class="viz-footer">Maps manufacturing hubs against export destination markets.</div>
+                </div>
+
+                <div class="viz-card">
+                    <div class="viz-header">
+                        <h3>Visual 6: Battery Tech Adoption & Pricing</h3>
+                        <span>Sales Volume & Retail Price Point</span>
+                    </div>
+                    <div class="viz-body">
+                        <img src="Screenshots\Battery Tech Adoption & Price Point.png" alt="Battery Tech & Price Chart">
+                    </div>
+                    <div class="viz-footer">Evaluates price points vs. sales adoption for LFP, NMC, NCA, Sodium-Ion, and Solid-State.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCENARIO 3 SECTION -->
+        <section id="scenario-3" class="scenario-section">
+            <div class="scenario-header">
+                <h2>Scenario 3: Sustainable Mobility & Clean Tech Research</h2>
+                <p>Stakeholder: Dr. Sarah Williams (Research Analyst) — Assessing battery degradation, emissions reduction, and value retention.</p>
+            </div>
+            <div class="grid-3">
+                <div class="viz-card">
+                    <div class="viz-header">
+                        <h3>Visual 7: Battery Technology Efficiency Grid</h3>
+                        <span>Capacity vs. Range vs. 5-Yr Degradation</span>
+                    </div>
+                    <div class="viz-body">
+                        <img src="Screenshots\Battery Technology Efficiency Grid.png" alt="Battery Performance Grid Chart">
+                    </div>
+                    <div class="viz-footer">Scatter analysis highlighting battery degradation rates over 5 years.</div>
+                </div>
+
+                <div class="viz-card">
+                    <div class="viz-header">
+                        <h3>Visual 8: Annual Environmental Impact (CO2 Saved)</h3>
+                        <span>Tons/Year CO2 Reduction by Segment</span>
+                    </div>
+                    <div class="viz-body">
+                        <img src="Screenshots\Annual Environmental Impact (CO2 Saved) .png" alt="CO2 Saved Chart">
+                    </div>
+                    <div class="viz-footer">Quantifies total carbon savings per year by vehicle type and battery chemistry.</div>
+                </div>
+
+                <div class="viz-card">
+                    <div class="viz-header">
+                        <h3>Visual 9: Customer Rating vs. 3-Yr Resale Retention</h3>
+                        <span>Linear Value Retention Model</span>
+                    </div>
+                    <div class="viz-body">
+                        <img src="Screenshots\Customer Rating vs. 3-Yr Resale Retention.png" alt="Customer Rating vs Resale Value Chart">
+                    </div>
+                    <div class="viz-footer">Correlates 3-year resale percentage retention with overall customer satisfaction.</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Global EV Market Intelligence Dashboard &copy; 2026 | Built with Tableau & HTML5/CSS3</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
